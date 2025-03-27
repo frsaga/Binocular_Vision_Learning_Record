@@ -13,17 +13,22 @@
 
 **径向畸变: Radial Distortion**
 
-径向畸变是指由于相机镜头的几何特性（如透镜效应）导致的图像几何变形。常见的表现是图像中心附近的物体看起来不对称或扩展。径向畸变一般通过两个参数（k1,k2k_1, k_2k1,k2）来进行建模，通常有 **桶形畸变** 和 **枕形畸变**。
+径向畸变是指由于相机镜头的几何特性（如透镜效应）导致的图像几何变形。常见的表现是图像中心附近的物体看起来不对称或扩展。径向畸变一般通过两个参数（k1,k2）来进行建模，通常有 **桶形畸变** 和 **枕形畸变**。
 
-**切向畸变: Tangential Distortion![img](https://i-blog.csdnimg.cn/blog_migrate/9d439d21c1380bcd3c208b01c88a6910.png)**
+**切向畸变: Tangential Distortion**
 
 
 切向畸变是由于相机镜头和传感器的对准问题引起的图像畸变。这种畸变使得图像呈现出扭曲的效果，通常影响到图像的边缘。
+![img](https://i-blog.csdnimg.cn/blog_migrate/9d439d21c1380bcd3c208b01c88a6910.png)
 
 **旋转矩阵: Rotation Matrices**
+
 **平移向量: Translation Vectors**
+
 **平均重投影误差: Mean Reprojection Error**
+
 **重投影误差: Reprojection Errors**
+
 **重投影点: Reprojected Points**
 
 
@@ -45,7 +50,7 @@
 
 使用海康机器人CS016相机进行简易双目平台搭建，使用双面胶固定，**基线Baseline**为10cm，相机参数如下
 
-设定两台相机参数保持一致![b287f6ff61d31f9b43b0dbd764386d8](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\b287f6ff61d31f9b43b0dbd764386d8.png)
+设定两台相机参数保持一致
 
 镜头参数<img width="452" alt="b287f6ff61d31f9b43b0dbd764386d8" src="https://github.com/user-attachments/assets/067dfd7d-3a3f-4db0-b820-12d265450d4f" />
 
