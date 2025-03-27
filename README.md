@@ -40,7 +40,7 @@
 
 ####  双目相机平台搭建
 
-![557db3a3ffc78a51d6504d524cc1ae7](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\557db3a3ffc78a51d6504d524cc1ae7.jpg)
+
 ![557db3a3ffc78a51d6504d524cc1ae7](https://github.com/user-attachments/assets/5e04624e-88e7-41a8-92b6-95fbc9886522)
 
 使用海康机器人CS016相机进行简易双目平台搭建，使用双面胶固定，**基线Baseline**为10cm，相机参数如下
@@ -63,7 +63,7 @@
 
 分别导入两台相机各自拍摄的标定图片
 
-![d933b6894a063cc7874010d32d2e95d](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\d933b6894a063cc7874010d32d2e95d.png)
+
 <img width="390" alt="d933b6894a063cc7874010d32d2e95d" src="https://github.com/user-attachments/assets/39e11404-1639-474a-8e60-4faaae116e09" />
 
 
@@ -75,14 +75,14 @@
 
 切向畸变（Tangential Distortion）是由于 **镜头安装与图像传感器平面不完全平行**，导致直线看起来发生倾斜。
 
-![c33a40a17a22436ee71c981518f26eb](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\c33a40a17a22436ee71c981518f26eb.png)
+
 <img width="901" alt="c33a40a17a22436ee71c981518f26eb" src="https://github.com/user-attachments/assets/2b2cc69b-9df8-4a9c-bc2b-ded7dac04b53" />
 
 
 
 将错误过多的图片进行删除，其余的图片重排之后重复筛选，直到柱状图所有图片组都接近1，得到标定结果之后导出参数Export
 
-![a5254730fdd0905dec3353b94c36504](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\a5254730fdd0905dec3353b94c36504.png)
+
 <img width="658" alt="1772b7d9b364c727d14a526469ea2dd" src="https://github.com/user-attachments/assets/0337994a-bf87-424a-bd20-64ff2c97707a" />
 
 
@@ -93,7 +93,7 @@ CameraParameters1与CameraParameters2为左右摄像头的单独标定参数
 RadialDistortion：径向畸变，摄像头由于光学透镜的特性使得成像存在着径向畸变，可由K1，K2，K3确定。
 TangentialDistortion：切向畸变，由于装配方面的误差，传感器与光学镜头之间并非完全平行，因此成像存在切向畸变，可由两个参数P1，P2确定。
 
-![1772b7d9b364c727d14a526469ea2dd](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\1772b7d9b364c727d14a526469ea2dd.png)
+
 <img width="658" alt="a5254730fdd0905dec3353b94c36504" src="https://github.com/user-attachments/assets/d1861e4b-10be-4631-bc4a-f695ba1bfb2a" />
 
 
@@ -103,12 +103,12 @@ TangentialDistortion：切向畸变，由于装配方面的误差，传感器与
 
 导入图片add images -- calibrate
 
-![6dd1551f5b9c84ce71c9d6c95856127](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\6dd1551f5b9c84ce71c9d6c95856127.png)
+
 <img width="911" alt="97506daf7d8e0f4f8304bf6be834ef4" src="https://github.com/user-attachments/assets/ee8edf61-ba45-491c-b7ca-406466725d03" />
 
 选择错误过多的图片删除 得到标定结果 
 
-![9aa7ca29e9d09fa32a6a4565a48995d](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\9aa7ca29e9d09fa32a6a4565a48995d.png)
+
 <img width="900" alt="515be9f958eb5eef53f2a7fa8e9bb3a" src="https://github.com/user-attachments/assets/45c7b00e-8dcd-4048-a5d9-72a9df2a5d56" />
 <img width="900" alt="9aa7ca29e9d09fa32a6a4565a48995d" src="https://github.com/user-attachments/assets/278bd841-9459-4599-b108-ddd82ccff1ec" />
 
@@ -116,10 +116,10 @@ TangentialDistortion：切向畸变，由于装配方面的误差，传感器与
 
 RadiaDistortion为相机的畸变矩阵，Intrinsics为内参矩阵
 
-![4a62f1631f067fde559493dd2ed28e4](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\4a62f1631f067fde559493dd2ed28e4.png)
+
 <img width="658" alt="4a62f1631f067fde559493dd2ed28e4" src="https://github.com/user-attachments/assets/6a2ecc4d-bf1d-4734-863e-d8aeb9132ff6" />
 
-![3bbc22e9ee4d4abd0c7a03e2e794d11](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\3bbc22e9ee4d4abd0c7a03e2e794d11.png)
+
 <img width="657" alt="3bbc22e9ee4d4abd0c7a03e2e794d11" src="https://github.com/user-attachments/assets/389107c3-3fcc-424e-a5ba-dc3a2a9e5f01" />
 
 ###  基于OpenCV的相机标定
@@ -137,7 +137,7 @@ RadiaDistortion为相机的畸变矩阵，Intrinsics为内参矩阵
 简单修改参考代码的读取照片文件夹和输出参数格式后，运行出现如下错误，经过改错，发现有四张照片没有拍摄到全部格角点，故报错，通过删除这四张图片后，正常输出参数
 <img width="823" alt="64d533840720057847e83aedc28e902" src="https://github.com/user-attachments/assets/c6502bbd-d30d-4f59-806f-4f8364f3c381" />
 
-![64d533840720057847e83aedc28e902](E:\onedrive\qq wechat download\WeChat Files\wxid_h6u75n2ios8122\FileStorage\Temp\64d533840720057847e83aedc28e902.png)
+
 
 代码输出结果
 
