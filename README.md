@@ -1,4 +1,4 @@
-# ECJCTU-czy Binocular_Vision_Learning_Record
+# ECJTU-czy Binocular_Vision_Learning_Record
 
 #### 双目相机标定理论知识
 
