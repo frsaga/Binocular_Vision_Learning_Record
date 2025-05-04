@@ -364,4 +364,5 @@ if __name__ == "__main__":
             
     cap.release() 
 ```
+<img width="1261" alt="31036112370de30380cb356a358de6f" src="https://github.com/user-attachments/assets/192457b8-171b-49de-95f1-91aecfb70da9" />
 
